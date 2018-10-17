@@ -1,0 +1,13 @@
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement; //need to change from Scene to SceneManagement 
+                                    //to actually use the SceneManager
+
+public class GoToScene : MonoBehaviour {
+
+    public void Button(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+}
